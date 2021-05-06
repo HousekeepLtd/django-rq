@@ -1,3 +1,4 @@
+import six
 import warnings
 
 import redis
@@ -7,7 +8,6 @@ from rq.utils import import_attribute
 
 from django.conf import settings
 from django.core.exceptions import ImproperlyConfigured
-from django.utils import six
 from django_rq import thread_queue
 
 from .jobs import get_job_class

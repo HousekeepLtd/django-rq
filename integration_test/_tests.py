@@ -7,6 +7,7 @@ import logging
 import os
 import signal
 import subprocess
+from six.moves.urllib.parse import urlunsplit
 import sys
 import time
 import unittest
@@ -14,7 +15,6 @@ import unittest
 import psycopg2
 import requests
 from django.conf import settings
-from django.utils.six.moves.urllib.parse import urlunsplit
 
 DJANGO_SETTINGS_MODULE = "integration_test.settings"
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", DJANGO_SETTINGS_MODULE)
